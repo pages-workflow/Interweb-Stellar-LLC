@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inter Web Stellar</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #222;
+    }
+    header, footer {
+      background-color: #004466;
+      color: #fff;
+      padding: 1em;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1em;
+      text-decoration: none;
+    }
+    main {
+      padding: 2em;
+    }
+    .portfolio {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 1em;
+    }
+    .project {
+      flex: 1 1 45%;
+      background: #fff;
+      padding: 1em;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .project img {
+      width: 100%;
+      height: auto;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      max-width: 400px;
+      margin: auto;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, textarea, button {
+      padding: 0.5em;
+      font-size: 1em;
+    }
+    button {
+      background: #004466;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    button:focus {
+      outline: 2px solid #222;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Inter Web Stellar</h1>
+    <nav>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="portfolio">
+        <div class="project">
+          <img src="project1.jpg" alt="Screenshot of Coffee Shop website" />
+          <h3>Coffee Shop Site</h3>
+          <p>Clean, mobile-friendly site for a local café.</p>
+          <a href="#">View Coffee Shop Site</a>
+        </div>
+        <div class="project">
+          <img src="project2.jpg" alt="Screenshot of Gym website" />
+          <h3>Fitness Studio Site</h3>
+          <p>High-impact layout for personal trainers and gyms.</p>
+          <a href="#">View Fitness Studio Site</a>
+        </div>
+        <div class="project">
+          <img src="project3.jpg" alt="Screenshot of Bakery website" />
+          <h3>Bakery Site</h3>
+          <p>Modern design for a neighborhood bakery.</p>
+          <a href="#">View Bakery Site</a>
+        </div>
+        <div class="project">
+          <img src="project4.jpg" alt="Screenshot of Portfolio website" />
+          <h3>Freelancer Portfolio</h3>
+          <p>Showcase site for a freelance designer or developer.</p>
+          <a href="#">View Freelancer Portfolio</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>I build accessible, lightweight websites using clean HTML/CSS and free hosting solutions. I help small businesses get online without unnecessary monthly costs or bloated tech. Every site is manually reviewed for basic accessibility and legal safety.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="mailto:your@email.com" method="post" enctype="text/plain">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Inter Web Stellar. Best-effort accessibility implemented. Not a guarantee of full WCAG 2.1 AA compliance unless contracted.</p>
+  </footer>
+</body>
+</html>
