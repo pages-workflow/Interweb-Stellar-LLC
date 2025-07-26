@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Interweb Stellar LLC</title>
+  <title>Inter Web Stellar</title>
   <style>
     body {
       font-family: sans-serif;
@@ -43,28 +43,11 @@
       width: 100%;
       height: auto;
     }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 1em;
-      max-width: 400px;
-      margin: auto;
-    }
     label {
       font-weight: bold;
     }
-    input, textarea, button {
-      padding: 0.5em;
-      font-size: 1em;
-    }
-    button {
-      background: #004466;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-    }
-    button:focus {
-      outline: 2px solid #222;
+    a {
+      color: #004466;
     }
   </style>
 </head>
@@ -116,23 +99,12 @@
 
     <section id="contact">
       <h2>Contact Me</h2>
-      <form action="mailto:your@email.com" method="post" enctype="text/plain">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit">Send Message</button>
-      </form>
+      <p>Email me at <a href="mailto:your@email.com">your@email.com</a></p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Inter Web Stellar. Best-effort accessibility implemented. Not a guarantee of full WCAG 2.1 AA compliance unless contracted.</p>
+    <p>&copy; 2025 Interweb Stellar LLC. Best-effort accessibility implemented. Not a guarantee of full WCAG 2.1 AA compliance unless contracted.</p>
   </footer>
 </body>
 </html>
